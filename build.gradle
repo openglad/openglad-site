@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+repositories {	
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.glassfish.jersey.core:jersey-server:2.0'
+	compile 'javax:javaee-api:7.0'
+}
+
+task explodedWar(type: Copy) {
+	into "$buildDir/explodedWar"
+	with war
+}
+
+war.dependsOn explodedWar
+
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '1.6'
+}
