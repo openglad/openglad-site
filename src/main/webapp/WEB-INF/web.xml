@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE web-app PUBLIC
- "-//Oracle Corporation//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
-<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
-    <servlet>
-        <servlet-name>helloWordServlet</servlet-name>
-        <servlet-class>org.openglad.test.HelloWordServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>helloWordServlet</servlet-name>
-        <url-pattern>/helloworld</url-pattern>
-    </servlet-mapping>
+    <filter>
+        <filter-name>openglad-site</filter-name>
+        <filter-class>org.glassfish.jersey.servlet.ServletContainer</filter-class>
+        <init-param>
+            <param-name>javax.ws.rs.Application</param-name>
+            <param-value>org.openglad.rest.Application</param-value>
+        </init-param>
+        <init-param>
+            <param-name>jersey.config.server.mvc.templateBasePath.freemarker</param-name>
+            <param-value>freemarker</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>openglad-site</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 </web-app>
