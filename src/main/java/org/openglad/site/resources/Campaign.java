@@ -1,6 +1,7 @@
-package org.openglad.rest;
+package org.openglad.site.resources;
 
 import com.google.common.collect.Maps;
+import org.glassfish.jersey.server.mvc.Template;
 import org.glassfish.jersey.server.mvc.Viewable;
 
 import javax.ws.rs.GET;
@@ -15,8 +16,14 @@ import java.util.Map;
  * @since 2013-06-17
  */
 @Path("/campaign")
-public class CampaignResource
+@Template
+public class Campaign
 {
+	public String getFoo()
+	{
+		return "bar";
+	}
+
 	@GET
 	@Path("{campaignId}")
 	@Produces(MediaType.TEXT_HTML)
@@ -26,7 +33,7 @@ public class CampaignResource
 		map.put("campaignId", campaignId);
 		map.put("campaignName", "Campaign Name");
 
-		return new Viewable("/campaign.ftl", map);
+		return new Viewable("index", map);
 	}
 
 	@GET
