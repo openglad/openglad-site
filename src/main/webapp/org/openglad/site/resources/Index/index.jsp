@@ -2,6 +2,6 @@
 
 My index page!
 <br/>
-Test Campaign: <a href="/campaign/123">123</a>
+Check out the <a href="/campaigns">latest campaigns<a/>!
 
 <jsp:include page="/includes/footer.jsp" />

@@ -2,7 +2,8 @@
 
 <h1>Campaign</h1>
 
-1: ${it.campaignId}
-2: ${it.campaignName}
+Id: ${it.campaign.id}<br/>
+Name: ${it.campaign.name}<br/>
+Upload Time: ${it.campaign.uploadTime}
 
 <jsp:include page="/includes/footer.jsp" />
