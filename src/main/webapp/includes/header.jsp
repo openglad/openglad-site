@@ -12,21 +12,24 @@
 		<meta property="og:type" content="website" />
 	</head>
 	<body>
-		<div class="container-fluid">
-			<div class="row-fluid">
-				<div class="span10 offset1">
-					<div class="navbar navbar-inverse">
-						<div class="navbar-inner">
-							<a class="brand" href="/">Openglad</a>
-							<ul class="nav pull-right">
-								<li><a href="/news">News</a>
-								<li><a href="/campaigns">Campaigns</a>
-								<li><a href="/media">Media</a>
-								<li><a href="/download">Download</a>
-								<li><a href="/about">About</a>
-							</ul>
+		<div id="wrap">
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span10 offset1">
+						<div class="navbar navbar-inverse">
+							<div class="navbar-inner">
+								<a class="brand" href="/">Openglad</a>
+								<ul class="nav pull-right">
+									<li><a href="/news">News</a>
+									<li><a href="/campaigns">Campaigns</a>
+									<li><a href="/media">Media</a>
+									<li><a href="/download">Download</a>
+									<li><a href="/about">About</a>
+								</ul>
+							</div>
 						</div>
 					</div>
-
-					<div class="relpos">
+				</div>
+				<div class="row-fluid">
+					<div class="span10 offset1">
 						<div class="content whitebg">
