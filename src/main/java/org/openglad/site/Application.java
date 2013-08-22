@@ -6,8 +6,8 @@ import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.media.multipart.MultiPartFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.mvc.jsp.JspMvcFeature;
-import org.openglad.site.entity.OpengladCampaign;
-import org.openglad.site.resources.Campaign;
+import org.openglad.site.entity.Campaign;
+import org.openglad.site.resources.Campaigns;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,7 +26,7 @@ public class Application extends ResourceConfig
 	{
 		log.info("registering JAX-RS resources");
 
-		packages(Campaign.class.getPackage().getName());
+		packages(Campaigns.class.getPackage().getName());
 		register(JspMvcFeature.class);
 		register(JacksonFeature.class);
 		register(JacksonObjectMapper.class);
@@ -41,6 +41,6 @@ public class Application extends ResourceConfig
 
 		JodaTimeTranslators.add(ObjectifyService.factory());
 
-		ObjectifyService.factory().register(OpengladCampaign.class);
+		ObjectifyService.factory().register(Campaign.class);
 	}
 }

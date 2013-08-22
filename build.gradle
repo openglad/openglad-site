@@ -1,17 +1,29 @@
 apply plugin: 'java'
 apply plugin: 'war'
+apply plugin: 'gae'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'org.gradle.api.plugins:gradle-gae-plugin:0.9'
+    }
+}
 
 repositories {	
-	mavenCentral()
+    mavenCentral()
 }
 
 dependencies {
-	compile 'org.glassfish.jersey.core:jersey-server:2.0'
-    compile 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.0'
-    compile 'org.glassfish.jersey.ext:jersey-mvc-jsp:2.0'
-    compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.0'
-    compile 'org.glassfish.jersey.media:jersey-media-multipart:2.0'
-	compile 'javax:javaee-api:7.0'
+    gaeSdk 'com.google.appengine:appengine-java-sdk:1.8.3'
+    compile 'org.glassfish.jersey.core:jersey-server:2.2'
+    compile 'org.glassfish.jersey.containers:jersey-container-servlet-core:2.2'
+    compile 'org.glassfish.jersey.ext:jersey-mvc-jsp:2.2'
+    compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.2'
+    compile 'org.glassfish.jersey.media:jersey-media-multipart:2.2'
+    compile 'javax:javaee-api:7.0'
     compile 'org.slf4j:slf4j-api:1.7.5'
     compile 'org.slf4j:jul-to-slf4j:1.7.5'
     compile 'ch.qos.logback:logback-core:1.0.13'
@@ -22,13 +34,25 @@ dependencies {
     compile 'jstl:jstl:1.2'
 }
 
-task explodedWar(type: Copy) {
-	into "$buildDir/explodedWar"
-	with war
+gae {
+    downloadSdk = true
+
+    appcfg {
+        oauth2 = true
+      
+        logs {
+            severity = 1
+            outputFile = file('openglad-site-log.txt')
+        }
+
+
+        app {
+            id = "openglad-site"	
+        }
+    }
+
 }
 
-war.dependsOn explodedWar
-
 task wrapper(type: Wrapper) {
-	gradleVersion = '1.6'
+    gradleVersion = '1.7'
 }

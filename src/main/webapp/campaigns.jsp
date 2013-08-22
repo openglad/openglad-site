@@ -10,7 +10,7 @@
 <c:forEach var="c" items="${it.campaigns}">
     <tr>
         <td>${c.id}</td>
-        <td><a href="/campaign/${c.id}">${c.name}</a></td>
+        <td><a href="/campaigns/${c.id}">${c.name}</a></td>
         <td>${c.file}</td>
         <td>${c.uploadTime}</td>
     </tr>

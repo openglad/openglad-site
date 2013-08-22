@@ -10,7 +10,7 @@ import org.joda.time.DateTime;
  * @since 2013-06-19
  */
 @Entity
-public class OpengladCampaign
+public class Campaign
 {
 	@Id
 	private String id;
@@ -22,17 +22,17 @@ public class OpengladCampaign
 	private byte[] file;
 
 
-	private OpengladCampaign()
+	private Campaign()
 	{
 		// unused
 	}
 
-	public OpengladCampaign(String id)
+	public Campaign(String id)
 	{
 		this.id = id;
 	}
 
-	public OpengladCampaign(String id, String name, byte[] file)
+	public Campaign(String id, String name, byte[] file)
 	{
 		this.id = id;
 		this.name = name;

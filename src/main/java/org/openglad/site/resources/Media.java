@@ -1,7 +1,8 @@
 package org.openglad.site.resources;
 
-import org.glassfish.jersey.server.mvc.Template;
+import org.glassfish.jersey.server.mvc.Viewable;
 
+import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
 /**
@@ -9,8 +10,11 @@ import javax.ws.rs.Path;
  * @since 2013-06-19
  */
 @Path("/media")
-@Template
 public class Media
 {
-
+	@GET
+	public Viewable get()
+	{
+		return new Viewable("/media", this);
+	}
 }
