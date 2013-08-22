@@ -1,4 +1,4 @@
-package org.openglad.site;
+package org.openglad.site.rest;
 
 import com.googlecode.objectify.ObjectifyService;
 import com.googlecode.objectify.impl.translate.opt.joda.JodaTimeTranslators;
@@ -7,7 +7,9 @@ import org.glassfish.jersey.media.multipart.MultiPartFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.mvc.jsp.JspMvcFeature;
 import org.openglad.site.entity.Campaign;
-import org.openglad.site.resources.Campaigns;
+import org.openglad.site.entity.CampaignFile;
+import org.openglad.site.rest.mapper.ConstraintValidationExceptionMapper;
+import org.openglad.site.rest.resources.Campaigns;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,7 +34,10 @@ public class Application extends ResourceConfig
 		register(JacksonObjectMapper.class);
 		register(MultiPartFeature.class);
 
+		register(ConstraintValidationExceptionMapper.class);
+
 		registerObjectifyEntities();
+
 	}
 
 	private void registerObjectifyEntities()
@@ -42,5 +47,6 @@ public class Application extends ResourceConfig
 		JodaTimeTranslators.add(ObjectifyService.factory());
 
 		ObjectifyService.factory().register(Campaign.class);
+		ObjectifyService.factory().register(CampaignFile.class);
 	}
 }

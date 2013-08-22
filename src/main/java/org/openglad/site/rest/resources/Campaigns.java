@@ -1,12 +1,18 @@
-package org.openglad.site.resources;
+package org.openglad.site.rest.resources;
 
 import com.google.common.collect.Maps;
+import com.google.common.io.ByteStreams;
+import org.glassfish.jersey.media.multipart.FormDataParam;
 import org.glassfish.jersey.server.mvc.Viewable;
 import org.joda.time.DateTime;
+import org.openglad.site.CampaignFileParser;
 import org.openglad.site.entity.Campaign;
+import org.openglad.site.entity.CampaignFile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.validation.constraints.NotNull;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -15,6 +21,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -41,8 +50,8 @@ public class Campaigns
 	{
 		List<Campaign> campaigns = ofy().load()
 				.type(Campaign.class)
-				.filter("uploadTime >", DateTime.now().minusDays(1))
-				.limit(10)
+				.filter("uploadTime >", DateTime.now().minusDays(7))
+				.limit(50)
 				.order("-uploadTime")
 				.list();
 
@@ -53,29 +62,18 @@ public class Campaigns
 
 
 	@POST
+	@Consumes(MediaType.MULTIPART_FORM_DATA)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Campaign store()
+	public Campaign store(@NotNull(message = "File is required.") @FormDataParam("file") InputStream inputStream) throws IOException
 	{
-		UUID id = UUID.randomUUID();
+		byte[] data = ByteStreams.toByteArray(inputStream);
 
-		//log.info("uploaded file name={} size={}", fileDisposition.getName(), fileDisposition.getSize());
-		//log.info("storing campaign {}", id);
+		Campaign campaign = CampaignFileParser.parse(new ByteArrayInputStream(data));
 
-		//byte[] fileData = null;
-		//try
-		//{
-		//	fileData = ByteStreams.toByteArray(file);
-		//}
-		//catch (IOException e)
-		//{
-		//	log.error("error reading file",e);
-		//	throw new WebApplicationException(500);
-		//}
+		CampaignFile campaignFile = new CampaignFile(campaign.getFileHash(), data);
 
-		//log.debug("read in bytes: {}", fileData.length);
-
-		Campaign campaign = new Campaign(id.toString(), "Campaign Name", null);
 		ofy().save().entity(campaign).now();
+		ofy().save().entity(campaignFile).now();
 
 		return campaign;
 	}
@@ -113,6 +111,25 @@ public class Campaigns
 		return Response.ok(campaign).build();
 	}
 
+	@GET
+	@Path("{campaignId}/file")
+	@Produces(MediaType.APPLICATION_OCTET_STREAM)
+	public Response getFile(@PathParam("campaignId") UUID campaignId)
+	{
+		Campaign campaign = retrieveCampaign(campaignId);
+
+		if(campaign == null)
+		{
+			return Response.status(Response.Status.NOT_FOUND).build();
+		}
+
+		CampaignFile campaignFile = ofy().load().entity(new CampaignFile(campaign.getFileHash())).now();
+
+		return Response.ok(campaignFile.getData())
+				.header("content-disposition","attachment; filename = campaign.glad")
+				.build();
+	}
+
 	private Campaign retrieveCampaign(UUID campaignId)
 	{
 		Campaign campaign = new Campaign(campaignId.toString());
@@ -127,5 +144,13 @@ public class Campaigns
 		}
 
 		return campaign;
+	}
+
+	@GET
+	@Path("/recent")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response getRecent()
+	{
+		return Response.ok(getCampaigns()).build();
 	}
 }

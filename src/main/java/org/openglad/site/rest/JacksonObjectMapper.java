@@ -1,4 +1,4 @@
-package org.openglad.site;
+package org.openglad.site.rest;
 
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.SerializationConfig;

@@ -3,6 +3,7 @@ package org.openglad.site.entity;
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 import com.googlecode.objectify.annotation.Index;
+import org.codehaus.jackson.annotate.JsonIgnore;
 import org.joda.time.DateTime;
 
 /**
@@ -14,12 +15,20 @@ public class Campaign
 {
 	@Id
 	private String id;
-	private String name;
 
+	private Integer formatVersion;
+	private String title;
+	private Integer version;
+	private String authors;
+	private String contributors;
+	private String description;
+
+	@JsonIgnore
 	@Index
 	private DateTime uploadTime;
 
-	private byte[] file;
+	@JsonIgnore
+	private String fileHash;
 
 
 	private Campaign()
@@ -32,12 +41,18 @@ public class Campaign
 		this.id = id;
 	}
 
-	public Campaign(String id, String name, byte[] file)
+	public Campaign(String id, Integer formatVersion, String title, Integer version, String authors, String contributors,
+					String description, String fileHash)
 	{
 		this.id = id;
-		this.name = name;
+		this.formatVersion = formatVersion;
+		this.title = title;
+		this.version = version;
+		this.authors = authors;
+		this.contributors = contributors;
+		this.description = description;
 		this.uploadTime = DateTime.now();
-		this.file = file;
+		this.fileHash = fileHash;
 	}
 
 	public String getId()
@@ -45,9 +60,34 @@ public class Campaign
 		return id;
 	}
 
-	public String getName()
+	public String getTitle()
 	{
-		return name;
+		return title;
+	}
+
+	public String getDescription()
+	{
+		return description;
+	}
+
+	public Integer getFormatVersion()
+	{
+		return formatVersion;
+	}
+
+	public Integer getVersion()
+	{
+		return version;
+	}
+
+	public String getAuthors()
+	{
+		return authors;
+	}
+
+	public String getContributors()
+	{
+		return contributors;
 	}
 
 	public DateTime getUploadTime()
@@ -55,8 +95,8 @@ public class Campaign
 		return uploadTime;
 	}
 
-	public byte[] getFile()
+	public String getFileHash()
 	{
-		return file;
+		return fileHash;
 	}
 }

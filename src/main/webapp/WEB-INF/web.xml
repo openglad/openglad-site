@@ -9,12 +9,8 @@
         <filter-class>org.glassfish.jersey.servlet.ServletContainer</filter-class>
         <init-param>
             <param-name>javax.ws.rs.Application</param-name>
-            <param-value>org.openglad.site.Application</param-value>
+            <param-value>org.openglad.site.rest.Application</param-value>
         </init-param>
-        <!--<init-param>-->
-            <!--<param-name>jersey.config.server.mvc.templateBasePath.freemarker</param-name>-->
-            <!--<param-value>freemarker</param-value>-->
-        <!--</init-param>-->
     </filter>
     <filter-mapping>
         <filter-name>openglad-site</filter-name>

@@ -5,14 +5,17 @@
 
 <table>
     <tr>
-        <td>Id</td><td>Campaign</td><td></td><td>Upload Time</td>
+        <td>Title</td>
+        <td>Author</td>
+        <td>Description</td>
+        <td>Download</td>
     </tr>
 <c:forEach var="c" items="${it.campaigns}">
     <tr>
-        <td>${c.id}</td>
-        <td><a href="/campaigns/${c.id}">${c.name}</a></td>
-        <td>${c.file}</td>
-        <td>${c.uploadTime}</td>
+        <td><a href="/campaigns/${c.id}">${c.title}</a></td>
+        <td>${c.authors}</td>
+        <td>${c.description}</td>
+        <td><a href="/campaigns/${c.id}/file">Download</a></td>
     </tr>
 </c:forEach>
 </table>
