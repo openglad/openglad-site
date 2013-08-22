@@ -24,3 +24,13 @@ body {
 	padding-bottom: 8px;
 	overflow: auto;
 }
+
+.trans {
+	background: rgba(255, 255, 255, 0);
+}
+
+hr.style-three {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}

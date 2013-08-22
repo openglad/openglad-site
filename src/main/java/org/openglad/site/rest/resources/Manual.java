@@ -9,12 +9,12 @@ import javax.ws.rs.Path;
  * @author Sean Ford
  * @since 2013-06-19
  */
-@Path("/")
-public class Index
+@Path("/manual")
+public class Manual
 {
 	@GET
 	public Viewable get()
 	{
-		return new Viewable("/index", this);
+		return new Viewable("/manual", this);
 	}
 }
