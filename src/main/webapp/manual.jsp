@@ -99,254 +99,211 @@ T : Bring up an overview of your team's status
 
 <p>Here is a list of the classes available in the game.</p>
 
-<div class="list-group">
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Soldier</h4>
-		<div class="list-group-item-text">
-			<p>Your basic grunt, can absorb and deal damage and moves moderately fast.  A good all-around fighter.  A fighter's normal weapon is a magical returning blade.  While effective at dealing damage, the downside to this is that the fighter must wait for his blade to return before throwing it again.</p>
-			<p>Specials:</p>
-			<ol>
-		        	<li>Charge: The fighter charge is simple but effective.  When charging, the fighter runs forward at high speed, dealing damage to anyone he encounters.</li>
-		        	<li>Boomerang: The boomerang can be difficult to use well, but inflicts much damage.  It spirals out from the thrower, inflicting deep wounds on anything it hits.  The boomerang can hit multiple targets before falling to earth.</li>
-		        	<li>Whirl: When a fighter whirls, he lashes out at all foes within reach.  Foes hit by such an attack may be pushed off balance or stunned.</li>
-		        	<li>Disarm: A skilled fighter can temporarily disarm a nearby opponent.  When disarmed, enemies are unable to fight effectively, and often cannot use special abilities.</li>
-		        </ol>
-		</div>
-	</div>
+<dl class="dl-horizontal">
+	<dt>Soldier</dt>
+	<dd>
+		<p>Your basic grunt, can absorb and deal damage and moves moderately fast.  A good all-around fighter.  A fighter's normal weapon is a magical returning blade.  While effective at dealing damage, the downside to this is that the fighter must wait for his blade to return before throwing it again.</p>
+		<p>Specials:</p>
+		<ol>
+	        	<li>Charge: The fighter charge is simple but effective.  When charging, the fighter runs forward at high speed, dealing damage to anyone he encounters.</li>
+	        	<li>Boomerang: The boomerang can be difficult to use well, but inflicts much damage.  It spirals out from the thrower, inflicting deep wounds on anything it hits.  The boomerang can hit multiple targets before falling to earth.</li>
+	        	<li>Whirl: When a fighter whirls, he lashes out at all foes within reach.  Foes hit by such an attack may be pushed off balance or stunned.</li>
+	        	<li>Disarm: A skilled fighter can temporarily disarm a nearby opponent.  When disarmed, enemies are unable to fight effectively, and often cannot use special abilities.</li>
+	        </ol>
+	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Barbarian</h4>
-		<div class="list-group-item-text">
-			<p>Barbarians are tough fighters, but possess more will than skill.  In general, they posess strong constitutions and impressive strength, but, lacking the training of the standard Soldiers, tend to bash their way through trouble.  Barbarians fight with a heavy iron hammer, both in melee and ranged combat.</p>
-			<p>One thing which makes Barbarians unique is their ability to resist magical attacks.  While they bleed like any other mortal, magic attacks, more often than not, fade off their skin without a trace.</p>
-			<p>Specials:</p>
-            		<ol>
-            			<li>Hurl Boulder: All barbarians have the ability to rip large stones from the nearby ground and hurl them at enemies.  How far they can throw them, and the damage the boulders impart, is strongly affected by the strength of the barbarian.</li>
-            			<li>Exploding Boulder: Using even more energy, a barbarian can hurl a rock with such strength that it explodes upon impact, damaging any nearby foes.</li>
-                 	</ol>
-                </div>
-        </div>
+	<dt>Barbarian</dt>
+	<dd>
+		<p>Barbarians are tough fighters, but possess more will than skill.  In general, they posess strong constitutions and impressive strength, but, lacking the training of the standard Soldiers, tend to bash their way through trouble.  Barbarians fight with a heavy iron hammer, both in melee and ranged combat.</p>
+		<p>One thing which makes Barbarians unique is their ability to resist magical attacks.  While they bleed like any other mortal, magic attacks, more often than not, fade off their skin without a trace.</p>
+		<p>Specials:</p>
+    		<ol>
+    			<li>Hurl Boulder: All barbarians have the ability to rip large stones from the nearby ground and hurl them at enemies.  How far they can throw them, and the damage the boulders impart, is strongly affected by the strength of the barbarian.</li>
+    			<li>Exploding Boulder: Using even more energy, a barbarian can hurl a rock with such strength that it explodes upon impact, damaging any nearby foes.</li>
+         	</ol>
+        </dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Elf</h4>
-		<div class="list-group-item-text">
-			<p>Elves are small and relatively weak, but are harder to hit than most classes.  Alone of all the standard classes, elves posses the 'ForestWalk' ability.  This ability allows them to walk through dense forests, passing barriers and avoiding enemies.  The more dexterous an elf is, the easier she will be able to journey through forest land. Elves generally throw stones for their ranged attack.</p>
-			<p>Specials:</p>
-        		<ol>
-        			<li>Rocks: A small handful of rocks.</li>
-        			<li>Bouncing Rocks: A handful of bouncing rocks.</li>
-        			<li>Lots of Rocks: An even bigger load of bouncing rocks.</li>
-        			<li>Mega Rocks: An amazing, huge, load of destructive bouncing rock power! :&gt;</li>
-        		</ol>
-        	</div>
-        </div>
+	<dt>Elf</dt>
+	<dd>
+		<p>Elves are small and relatively weak, but are harder to hit than most classes.  Alone of all the standard classes, elves posses the 'ForestWalk' ability.  This ability allows them to walk through dense forests, passing barriers and avoiding enemies.  The more dexterous an elf is, the easier she will be able to journey through forest land. Elves generally throw stones for their ranged attack.</p>
+		<p>Specials:</p>
+		<ol>
+			<li>Rocks: A small handful of rocks.</li>
+			<li>Bouncing Rocks: A handful of bouncing rocks.</li>
+			<li>Lots of Rocks: An even bigger load of bouncing rocks.</li>
+			<li>Mega Rocks: An amazing, huge, load of destructive bouncing rock power! :&gt;</li>
+		</ol>
+	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Archer</h4>
-		<div class="list-group-item-text">
-			<p>Archers are fleet of foot, and their arrows have a long range.  Although they're not as strong or healthy as fighters, they can also be a good squad backbone.</p>
-			<p>Specials:</p>
-			<ol>
-        			<li>Fire Arrows: When pressed, a skilled archer can spin quickly around, firing a stream of blazing arrows.  Each of these arrows is deadly, and can wreak havoc in crowded quarters.</li>
-        			<li>Barrage: For when accuracy is more important than total power, archers can loose a stream of arrows all at one target, seriously wounding even the toughest enemy.</li>
-        			<li>Exploding Bolt: Unlike the earlier specials, this is merely one bolt, but it packs a lot of punch.  Not only does the flaming arrow deal more damage than normal, these bolts explode on impact, damaging friend or foe!</li>
-        		</ol>
-        	</div>
-        </div>
+	<dt>Archer</dt>
+	<dd>
+		<p>Archers are fleet of foot, and their arrows have a long range.  Although they're not as strong or healthy as fighters, they can also be a good squad backbone.</p>
+		<p>Specials:</p>
+		<ol>
+			<li>Fire Arrows: When pressed, a skilled archer can spin quickly around, firing a stream of blazing arrows.  Each of these arrows is deadly, and can wreak havoc in crowded quarters.</li>
+			<li>Barrage: For when accuracy is more important than total power, archers can loose a stream of arrows all at one target, seriously wounding even the toughest enemy.</li>
+			<li>Exploding Bolt: Unlike the earlier specials, this is merely one bolt, but it packs a lot of punch.  Not only does the flaming arrow deal more damage than normal, these bolts explode on impact, damaging friend or foe!</li>
+		</ol>
+	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Mage</h4>
-		<div class="list-group-item-text">
-			<p>Mages are slow, nearly defenseless, and horrible at hand-to-hand combat, but their magical energy balls pack a big punch.  All mages, regardless of level, posses the ability to teleport out of (or into!) danger, providing they've saved enough magic.</li>
-			<p>Specials:</p>
-			<ol>
-        			<li>Teleport: Mages often teleport out of (or into!) danger all over the battlefield.  While immensely useful in escaping or exploring, the standard teleport spell is non- directional, and the casting mage has no control over the final destination.
-        			<p>SHIFTER: The alternate, more advanced teleport is really a form of 'Dimension Door,' and allows the mage to pick a location, memorize it, and return there at will.  This skill requires more intelligence than even a normal mage, and the number of uses of the memorized spot is also determined by intelligence.</li>
-        			<li>Warp Space: While Warp Space can be used offensively, it is generally used as a defense by a surrounded mage.  Casting this spell will twist the fabric of space around the mage, damaging nearby opponents.  The duration and size of the twist are proportional to the amount of magic the mage possesses when the spell is cast.</li>
-        			<li>Time Stop: Only powerful mages are able to freeze time at all, let alone for a subjectively long duration.  When the spell is cast, time stops for everything not on the mage's team.  Although this can be immensely powerful, be warned, as no magic will be generated during this frozen moment.</li>
-        			<li>Energy Wave: Somewhat akin to a modern-day flame-thrower, a mage's energy wave releases an enormous, expanding flood of energy outward.  The energy wave, being non-corporeal, will pass through walls and other impediments, and can inflict damage on many enemies before fading away.</li>
-       				<li>HeartBurst:  This awesome spell comes only to the most powerful of mages.  By concentrating his own life energies, a mage can send forth an explosive aura of energy, causing nearby foes to burst into flames from their inner depths!  The more magic posessed when casting this spell, the stronger the effect will be.  The damage is spread among all enemies in range.</li>
-       			</ol>
-       		</div>
-       	</div>
+	<dt>Mage</dt>
+	<dd>
+		<p>Mages are slow, nearly defenseless, and horrible at hand-to-hand combat, but their magical energy balls pack a big punch.  All mages, regardless of level, posses the ability to teleport out of (or into!) danger, providing they've saved enough magic.</li>
+		<p>Specials:</p>
+		<ol>
+			<li>Teleport: Mages often teleport out of (or into!) danger all over the battlefield.  While immensely useful in escaping or exploring, the standard teleport spell is non- directional, and the casting mage has no control over the final destination.
+			<p>SHIFTER: The alternate, more advanced teleport is really a form of 'Dimension Door,' and allows the mage to pick a location, memorize it, and return there at will.  This skill requires more intelligence than even a normal mage, and the number of uses of the memorized spot is also determined by intelligence.</li>
+			<li>Warp Space: While Warp Space can be used offensively, it is generally used as a defense by a surrounded mage.  Casting this spell will twist the fabric of space around the mage, damaging nearby opponents.  The duration and size of the twist are proportional to the amount of magic the mage possesses when the spell is cast.</li>
+			<li>Time Stop: Only powerful mages are able to freeze time at all, let alone for a subjectively long duration.  When the spell is cast, time stops for everything not on the mage's team.  Although this can be immensely powerful, be warned, as no magic will be generated during this frozen moment.</li>
+			<li>Energy Wave: Somewhat akin to a modern-day flame-thrower, a mage's energy wave releases an enormous, expanding flood of energy outward.  The energy wave, being non-corporeal, will pass through walls and other impediments, and can inflict damage on many enemies before fading away.</li>
+			<li>HeartBurst:  This awesome spell comes only to the most powerful of mages.  By concentrating his own life energies, a mage can send forth an explosive aura of energy, causing nearby foes to burst into flames from their inner depths!  The more magic posessed when casting this spell, the stronger the effect will be.  The damage is spread among all enemies in range.</li>
+		</ol>
+	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Archmage</h4>
-		<div class="list-group-item-text">
-			<p>When a Mage has reached the sixth level or higher, she may choose to specialize and become an Archmage.  An Archmage takes the learnings of the Magi one step further, posessing extraordinary firepower at the expense of physical weakness.</p>
-			<p>Even more than for a normal Mage, an Archmage's powers all hinge upon how much Intelligence is posessed.  An Archmage shares some spells with the standard Mage class, but quickly gains other spells for high damage.</p>
-           		<p>Specials:</p>
-           		<ol>
-           			<li>Teleport: Like normal mages, Archmages posess the ability to teleport into and out of danger.  Similarly, intelligent Archmages can use the alternate form of this ability (SHIFTER) to place a marker, so as to memorize a location to return to.</li>
-           			<li>HeartBurst:  This spell is a more powerful version of the standard mage's HeartBurst (5th level), and functions in the same manner.
-           			<p>SHIFTER:  By using the alternate version of an Archmage's second-level ability, the spell 'Chain Lightning' is called forth.  Here, the Archmage shoots out a bolt of lightning, powered by excess mana.  The bolt will seek out a nearby enemy, and upon impact, split into multiple new bolts, which will seek their own targets.  In crowded quarters, this spell can incinerate an entire room of the foe with one continuous blast!</li>
-           			<li>Summon Image:  By means of an intricate yet relatively unexpensive spell, an Archmage can summon forth an image of a brave warrior to fight for his team.  Should the enemy accept the illusion as real, this phantom can inflict real damage upon the foe.  Once pricked by the point of any weapon, however, the illusion will vanish back into the ether.
-           			<p>SHIFTER:  More powerful than illusion, a strong Archmage may summon forth an elemental of fire.  This spell, however, comes with both a blessing and a curse -- for the lifeforce of this elemental is linked to that of the Archmage, and while this may infuse the daemon with extra sustaining health, it can also weaken the archmage to a perilous condition!</li>
-           			<li>Mind Control:  For a short time, powerful Archmages may control the minds of those around them, bending their enemies to their will.  The more magical enery the Archmage has availible, the stronger the control will be, and the greater number of foes will be enslaved.</li>
-           		</ol>
-           	</div>
-        </div>
+	<dt>Archmage</dt>
+	<dd>
+		<p>When a Mage has reached the sixth level or higher, she may choose to specialize and become an Archmage.  An Archmage takes the learnings of the Magi one step further, posessing extraordinary firepower at the expense of physical weakness.</p>
+		<p>Even more than for a normal Mage, an Archmage's powers all hinge upon how much Intelligence is posessed.  An Archmage shares some spells with the standard Mage class, but quickly gains other spells for high damage.</p>
+   		<p>Specials:</p>
+   		<ol>
+   			<li>Teleport: Like normal mages, Archmages posess the ability to teleport into and out of danger.  Similarly, intelligent Archmages can use the alternate form of this ability (SHIFTER) to place a marker, so as to memorize a location to return to.</li>
+   			<li>HeartBurst:  This spell is a more powerful version of the standard mage's HeartBurst (5th level), and functions in the same manner.
+   			<p>SHIFTER:  By using the alternate version of an Archmage's second-level ability, the spell 'Chain Lightning' is called forth.  Here, the Archmage shoots out a bolt of lightning, powered by excess mana.  The bolt will seek out a nearby enemy, and upon impact, split into multiple new bolts, which will seek their own targets.  In crowded quarters, this spell can incinerate an entire room of the foe with one continuous blast!</li>
+   			<li>Summon Image:  By means of an intricate yet relatively unexpensive spell, an Archmage can summon forth an image of a brave warrior to fight for his team.  Should the enemy accept the illusion as real, this phantom can inflict real damage upon the foe.  Once pricked by the point of any weapon, however, the illusion will vanish back into the ether.
+   			<p>SHIFTER:  More powerful than illusion, a strong Archmage may summon forth an elemental of fire.  This spell, however, comes with both a blessing and a curse -- for the lifeforce of this elemental is linked to that of the Archmage, and while this may infuse the daemon with extra sustaining health, it can also weaken the archmage to a perilous condition!</li>
+   			<li>Mind Control:  For a short time, powerful Archmages may control the minds of those around them, bending their enemies to their will.  The more magical enery the Archmage has availible, the stronger the control will be, and the greater number of foes will be enslaved.</li>
+   		</ol>
+   	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Cleric</h4>
-		<div class="list-group-item-text">
-			<p>Clerics, like mages, are slow, but have a stronger hand-to-hand attack.  Clerics posses abilities related to healing and, on the darker side, interaction with the dead.  Clerics have the unique ability to generate fields which their teammates can pass through, but which foes must hack down to pass.</p>
-			<p>Specials:</p>
-			<ol>
-        			<li>Heal: Even the lowest cleric possesses the gods-granted ability to heal others.  Due to the nature of this gift, a cleric can heal several friends, if gathered closely around, for the mana cost of a single spell.  The higher level a cleric is, the stronger this healing power will become.
-        			<p>NOTE: clerics controlled by the computer who are on your team will automatically attempt to heal any wounded team member who 'bumps' them.
-        			<p>SHIFTER:  Although normally beings of peace, even Clerics sometimes need a strong defense to keep their lifeblood flowing.  Thus, every Cleric soon learns the 'Mystic Mace' spell, which conjurs an ethereal mace to defend against blows, and strike any foe who gets too close.  Although several of these 'maces' may be summoned at one time, the strength of each is determined by the amount of magical energy put into it, and thus one strong mace may be more effective than several weaker ones.
-        			<li>Raise Undead: This clerical ability allows the caster to temporarily bring back fallen foes or friends, and have them fight once more.  The strength of this recalled zombie, as well as its duration upon the battlefield, depends both on the cleric's power and the strength of the one who is raised.  When the undead falls again, no power available can bring it back.
-        			<p>SHIFTER: The reverse of raise undead, Turn Undead has the power to ultimately send the walking dead back to their realm.
-        			<p>Raise Ghost: This stronger version of Raise Undead brings back not the bodies of those who have fallen, but the spirit.  Such a ghost has the advantage of being ethereal and traveling anywhere, as well has possessing stronger powers of attack than a mere zombie.
-        			<p>SHIFTER: As with Raise Undead, a knowledgable cleric has the power not only to bring forth sprits, but also to lay them to rest.  This level of Turn Undead will affect both zombies and ethereal spirits.
-        			<li>Resurrect: This ultimate power of the clerics puts the art of raising the dead to shame.  With this spell, a powerful cleric can reunite the body and soul of a fallen comrade, healing most wounds in the process.  Be warned, however, that such an endeavor is extremely taxing to both the one who is raised and the casting cleric.
-        		</ol>
-        	</div>
-        </div>
+	<dt>Cleric</dt>
+	<dd>
+		<p>Clerics, like mages, are slow, but have a stronger hand-to-hand attack.  Clerics posses abilities related to healing and, on the darker side, interaction with the dead.  Clerics have the unique ability to generate fields which their teammates can pass through, but which foes must hack down to pass.</p>
+		<p>Specials:</p>
+		<ol>
+			<li>Heal: Even the lowest cleric possesses the gods-granted ability to heal others.  Due to the nature of this gift, a cleric can heal several friends, if gathered closely around, for the mana cost of a single spell.  The higher level a cleric is, the stronger this healing power will become.
+			<p>NOTE: clerics controlled by the computer who are on your team will automatically attempt to heal any wounded team member who 'bumps' them.
+			<p>SHIFTER:  Although normally beings of peace, even Clerics sometimes need a strong defense to keep their lifeblood flowing.  Thus, every Cleric soon learns the 'Mystic Mace' spell, which conjurs an ethereal mace to defend against blows, and strike any foe who gets too close.  Although several of these 'maces' may be summoned at one time, the strength of each is determined by the amount of magical energy put into it, and thus one strong mace may be more effective than several weaker ones.
+			<li>Raise Undead: This clerical ability allows the caster to temporarily bring back fallen foes or friends, and have them fight once more.  The strength of this recalled zombie, as well as its duration upon the battlefield, depends both on the cleric's power and the strength of the one who is raised.  When the undead falls again, no power available can bring it back.
+			<p>SHIFTER: The reverse of raise undead, Turn Undead has the power to ultimately send the walking dead back to their realm.
+			<p>Raise Ghost: This stronger version of Raise Undead brings back not the bodies of those who have fallen, but the spirit.  Such a ghost has the advantage of being ethereal and traveling anywhere, as well has possessing stronger powers of attack than a mere zombie.
+			<p>SHIFTER: As with Raise Undead, a knowledgable cleric has the power not only to bring forth sprits, but also to lay them to rest.  This level of Turn Undead will affect both zombies and ethereal spirits.
+			<li>Resurrect: This ultimate power of the clerics puts the art of raising the dead to shame.  With this spell, a powerful cleric can reunite the body and soul of a fallen comrade, healing most wounds in the process.  Be warned, however, that such an endeavor is extremely taxing to both the one who is raised and the casting cleric.
+		</ol>
+	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Thief</h4>
-		<div class="list-group-item-text">
-			<p>Thieves are fast and stronger of constitution than the magic-wielders, though not so potent as the soldier.  Like fighters, thieves wield stabbing and throwing blades.  Although their blades are not magical, they posses an unlimited supply and can throw them in rapid succession.</p>
-			<p>Specials:</p>
-        		<ol>
-        			<li>Plant Bomb: All thieves can drop small, hand-made explosives to the ground, often able to take out even the strongest opponent.  Beware, however, for unlike an archer's arrows, bombs do not discriminate in who they destroy!</li>
-        			<li>Cloak: A moderately experienced thief can learn to hide in even the smallest shadows, slipping unseen past enemy patrols.  How good the 'cloaking' is, and how long the thief can maintain it, depends on both the dexterity and level of the practicer.  A thief on your team who is cloaked will show up with an outline, so that you know where she is.</li>
-        			<li>Taunt: While some would think it insane, thieves have made an art of taunting their enemies.  A skilled thief can lure her enemies away from their chosen targets, often leading them on a fruitless chase, until the rest of the team can wipe them up.
-        			<p>SHIFTER: When not taunting their enemies, thieves may be charming them instead.  Masters of inducing paranoia and charm, a clever thief can at times convince his worst enemy to help him out for a while.</li>
-        			<li>Poison Cloud: The ability to create billowing clouds of poison is the thief's other offensive weapon.  By gathering up harmless elements and combining them, a thief can create a truly noxious concoction, which when smashed from its container will quickly expand into the air, bringing airborne pain and confusion to nearby enemies.
-        		</ol>
-        	</div>
-        </div>
+	<dt>Thief</dt>
+	<dd>
+		<p>Thieves are fast and stronger of constitution than the magic-wielders, though not so potent as the soldier.  Like fighters, thieves wield stabbing and throwing blades.  Although their blades are not magical, they posses an unlimited supply and can throw them in rapid succession.</p>
+		<p>Specials:</p>
+		<ol>
+			<li>Plant Bomb: All thieves can drop small, hand-made explosives to the ground, often able to take out even the strongest opponent.  Beware, however, for unlike an archer's arrows, bombs do not discriminate in who they destroy!</li>
+			<li>Cloak: A moderately experienced thief can learn to hide in even the smallest shadows, slipping unseen past enemy patrols.  How good the 'cloaking' is, and how long the thief can maintain it, depends on both the dexterity and level of the practicer.  A thief on your team who is cloaked will show up with an outline, so that you know where she is.</li>
+			<li>Taunt: While some would think it insane, thieves have made an art of taunting their enemies.  A skilled thief can lure her enemies away from their chosen targets, often leading them on a fruitless chase, until the rest of the team can wipe them up.
+			<p>SHIFTER: When not taunting their enemies, thieves may be charming them instead.  Masters of inducing paranoia and charm, a clever thief can at times convince his worst enemy to help him out for a while.</li>
+			<li>Poison Cloud: The ability to create billowing clouds of poison is the thief's other offensive weapon.  By gathering up harmless elements and combining them, a thief can create a truly noxious concoction, which when smashed from its container will quickly expand into the air, bringing airborne pain and confusion to nearby enemies.
+		</ol>
+	</dd>
 
+	<dt>Druid</dt>
+	<dd>
+		<p>Druids are the magicians of nature, and have special powers over natural events.  Druids can throw lightning bolts at their foes; the bolts have long range and are very fast.</p>
+		<p>Specials:</p>
+		<ol>
+			<li>Grow Tree: The simplest druid magic is that of planting and growing trees.  While this might seem pointless, the druid imbues these saplings with his own energy, and the trees will allow friends to pass without hindrance, but severely impede any enemies trying to slip past.</li>
+			<li>Summon Faerie: The druid power to summon forth sprites and faeries from the woodlands is well known.  These summoned sprites will take off in pursuit of enemies, flying over the landscape and freezing foes in their tracks.</li>
+			<li>Reveal Items: The druid's power to magically reveal items to his sight most often used when searching for gold or other treasure.  At other times, this sight aids in the searching out of enemy encampments or fortifications.  When Reveal is cast, gold, silver, potions, and creature generators will show up on the radar map, but only to the caster.</li>
+			<li>Protection: A high level druid can protect his friends with this natural invocation.  By summoning forth small currents of winds to envelop nearby team members, the druid can help make his comrades harder to hit by both close and long range attacks.  Subsequent castings will strengthen and prolong the effect.</li>
+		</ol>
+	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Druid</h4>
-		<div class="list-group-item-text">
-			<p>Druids are the magicians of nature, and have special powers over natural events.  Druids can throw lightning bolts at their foes; the bolts have long range and are very fast.</p>
-			<p>Specials:</p>
-			<ol>
-        			<li>Grow Tree: The simplest druid magic is that of planting and growing trees.  While this might seem pointless, the druid imbues these saplings with his own energy, and the trees will allow friends to pass without hindrance, but severely impede any enemies trying to slip past.</li>
-        			<li>Summon Faerie: The druid power to summon forth sprites and faeries from the woodlands is well known.  These summoned sprites will take off in pursuit of enemies, flying over the landscape and freezing foes in their tracks.</li>
-        			<li>Reveal Items: The druid's power to magically reveal items to his sight most often used when searching for gold or other treasure.  At other times, this sight aids in the searching out of enemy encampments or fortifications.  When Reveal is cast, gold, silver, potions, and creature generators will show up on the radar map, but only to the caster.</li>
-        			<li>Protection: A high level druid can protect his friends with this natural invocation.  By summoning forth small currents of winds to envelop nearby team members, the druid can help make his comrades harder to hit by both close and long range attacks.  Subsequent castings will strengthen and prolong the effect.</li>
-        		</ol>
-        	</div>
-        </div>
+	<dt>Orc</dt>
+	<dd>
+		<p>Orcs are your basic 'grunt' fighter; strong and hard to hurt, but without much intelligence or ability to do more than inflict pain.  Basic orcs don't have a ranged attack, but their damage at close range is impressive.</p>
+		<p>Specials:</p>
+		<ol>
+			<li>Howl: An orc's howl of rage has an almost magical quality about it.  Those nearby are often stunned, unable to move or defend themselves.  How long this effect lasts depends on the distance between the orc and its foe and their respective levels.
+			<li>Eat Corpse: Other members of the team tend to ignore the orc's ability of eating the corpses of the enemy (and sometimes friend).  Nevertheless, the strength and power gained by this barbarous act cannot be denied.
+		</ol>
+	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Orc</h4>
-		<div class="list-group-item-text">
-			<p>Orcs are your basic 'grunt' fighter; strong and hard to hurt, but without much intelligence or ability to do more than inflict pain.  Basic orcs don't have a ranged attack, but their damage at close range is impressive.</p>
-			<p>Specials:</p>
-			<ol>
-        			<li>Howl: An orc's howl of rage has an almost magical quality about it.  Those nearby are often stunned, unable to move or defend themselves.  How long this effect lasts depends on the distance between the orc and its foe and their respective levels.
-        			<li>Eat Corpse: Other members of the team tend to ignore the orc's ability of eating the corpses of the enemy (and sometimes friend).  Nevertheless, the strength and power gained by this barbarous act cannot be denied.
-        		</ol>
-        	</div>
-        </div>
+	<dt>Fire Elemental</dt>
+	<dd>
+		<p>Fire elementals have been known to strike terror into even the toughest of warriors.  Strong and relatively quick, their flaming meteors can inflict hideous wounds upon an enemy, and their speed and size make them dangerous opponents even without this ability.
+		<p>Specials:</p>
+		<ol>
+			<li>Starburst: Fire elementals have the ability to release a 'starburst' of flaming death in all directions; this natural defense will sometimes destroy an enemy even as the fire elemental itself perishes.</li>
+		</ol>
+	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Fire Elemental</h4>
-		<div class="list-group-item-text">
-			<p>Fire elementals have been known to strike terror into even the toughest of warriors.  Strong and relatively quick, their flaming meteors can inflict hideous wounds upon an enemy, and their speed and size make them dangerous opponents even without this ability.
-			<p>Specials:</p>
-        		<ol>
-        			<li>Starburst: Fire elementals have the ability to release a 'starburst' of flaming death in all directions; this natural defense will sometimes destroy an enemy even as the fire elemental itself perishes.</li>
-        		</ol>
-        	</div>
-        </div>
+	<dt>Skeleton</dt>
+	<dd>
+		<p>Skeletons are the pathetic remains of those who once were among the living.  Although they are not particularly dangerous, they move with blinding speed, and often surround a living enemy to take it to the grave.</p>
+		<p>Specials:</p>
+		<ol>
+   			<li>Tunnel: These bone-wielding undead have the ability to tunnel quickly underground, sometimes emerging under their hapless victim's feet.  When manipulated by an intelligent mind, this ability also allows them to tunnel under walls and come at the enemy from the rear.</li>
+   		</ol>
+   	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Skeleton</h4>
-		<div class="list-group-item-text">
-			<p>Skeletons are the pathetic remains of those who once were among the living.  Although they are not particularly dangerous, they move with blinding speed, and often surround a living enemy to take it to the grave.</p>
-			<p>Specials:</p>
-			<ol>
-           			<li>Tunnel: These bone-wielding undead have the ability to tunnel quickly underground, sometimes emerging under their hapless victim's feet.  When manipulated by an intelligent mind, this ability also allows them to tunnel under walls and come at the enemy from the rear.</li>
-           		</ol>
-           	</div>
-        </div>
+	<dt>Ghost</dt>
+	<dd>
+		<p>A more fearsome type of undead, ghosts can pass through walls, trees, and anything else that gets in their way.  Although they cannot inflict damage from a distance, their chilling touch can bring death quickly at close range.</p>
+		<p>Specials</p>
+		<ol>
+   			<li>Scare: A ghost's haunting wail can cause even the bravest of warriors to flee in terror.  When invoked, all nearby enemies will flee away from the ghost; how far they run, and how long the effect lasts, is determined by the power of the ghost and the resistance of the targets.</li>
+   		</ol>
+   	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Ghost</h4>
-		<div class="list-group-item-text">
-			<p>A more fearsome type of undead, ghosts can pass through walls, trees, and anything else that gets in their way.  Although they cannot inflict damage from a distance, their chilling touch can bring death quickly at close range.</p>
-			<p>Specials</p>
-			<ol>
-           			<li>Scare: A ghost's haunting wail can cause even the bravest of warriors to flee in terror.  When invoked, all nearby enemies will flee away from the ghost; how far they run, and how long the effect lasts, is determined by the power of the ghost and the resistance of the targets.</li>
-           		</ol>
-           	</div>
-        </div>
+	<dt>Faerie</dt>
+	<dd>
+		<p>The flying faerie are diminutive in stature, flying above friends and enemies alike unnoticed.  Although they are delicate and easily destroyed, faeries can sprinkle a magic powder which can freeze their enemies in place.</p>
+	</dd>
 
+	<dt>Slime</dt>
+	<dd>
+		<p> It is hard to say if a slime is truly intelligent, or simply some form of lichen too agitated to remain still.  Although generally peaceful in nature, slimes can make dangerous enemies when disturbed.  From what has been observed of slimes, they begin life as small, relatively harmless patches of ooze which grow until they are bigger than a man.  These large patches of slime then split into two or more small slimes, thus increasing the population.  Slimes are particularly vulnerable to fire or magical attacks.</p>
+		<p>Specials:</p>
+		<ol>
+			<li>Grow: Slimes can grow larger, or split in two, when they gain enough magical energy.</li>
+		</ol>
+	</dd>
+</dl>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Faerie</h4>
-		<div class="list-group-item-text">
-			<p>The flying faerie are diminutive in stature, flying above friends and enemies alike unnoticed.  Although they are delicate and easily destroyed, faeries can sprinkle a magic powder which can freeze their enemies in place.</p>
-		</div>
-	</div>
-
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Slime</h4>
-		<div class="list-group-item-text">
-			<p> It is hard to say if a slime is truly intelligent, or simply some form of lichen too agitated to remain still.  Although generally peaceful in nature, slimes can make dangerous enemies when disturbed.  From what has been observed of slimes, they begin life as small, relatively harmless patches of ooze which grow until they are bigger than a man.  These large patches of slime then split into two or more small slimes, thus increasing the population.  Slimes are particularly vulnerable to fire or magical attacks.</p>
-			<p>Specials:</p>
-			<ol>
-        			<li>Grow: Slimes can grow larger, or split in two, when they gain enough magical energy.</li>
-        		</ol>
-        	</div>
-	</div>
-</div>
 
 <p>In general, each character has about three 'special abilities', although it often requires gaining several levels before these other special abilities become availible.</p>
 
 <p>The statistics from which you can choose to modify here are:</p>
 
-<div class="list-group">
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Strength</h4>
-		<div class="list-group-item-text">
-    			<p>Strength affects your melee (hand-to-hand) combat, as well as things like your weapon range.</p>
-    		</div>
-    	</div>
+<dl class="dl-horizontal">
+	<dt>Strength</dt>
+	<dd>
+		<p>Strength affects your melee (hand-to-hand) combat, as well as things like your weapon range.</p>
+	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Constitution</h4>
-		<div class="list-group-item-text">
-    			<p>Constitution increases your hitpoints and rate of healing, and also affects other combat-related skills.</p>
-    		</div>
-    	</div>
+	<dt>Constitution</dt>
+	<dd>
+		<p>Constitution increases your hitpoints and rate of healing, and also affects other combat-related skills.</p>
+	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Dexterity</h4>
-		<div class="list-group-item-text">
-    			<p>Dexterity helps improve your ability to dodge, your weapon's accuracy, your speed, and other related skills.</p>
-    		</div>
-    	</div>
+	<dt>Dexterity</dt>
+	<dd>
+		<p>Dexterity helps improve your ability to dodge, your weapon's accuracy, your speed, and other related skills.</p>
+	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Intelligence</h4>
-		<div class="list-group-item-text">
-    			<p>Intelligence controls the amount of 'magic' power you have, how fast this power regenerates, and the success of your special abilities.</p>
-    		</div>
-    	</div>
+	<dt>Intelligence</dt>
+	<dd>
+		<p>Intelligence controls the amount of 'magic' power you have, how fast this power regenerates, and the success of your special abilities.</p>
+	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Armor</h4>
-		<div class="list-group-item-text">
-    			<p>Armor is like shielding; the more you have, the less damage you will take from a given blow.</p>
-    		</div>
-    	</div>
+	<dt>Armor</dt>
+	<dd>
+		<p>Armor is like shielding; the more you have, the less damage you will take from a given blow.</p>
+	</dd>
 
-	<div class="list-group-item">
-		<h4 class="list-group-item-heading">Level</h4>
-		<div class="list-group-item-text">
-    			<p>Your character's level is determined by his experience (currently 0), visible on the right of the screen.  Level affects all stats, and affects what special abilities your character can perform.  While it may look very expensive to buy a level for your character, it can be useful when you're "almost there" and want the increase, as the cost decreases the closer you are to the next level.</p>
-    		</div>
-    	</div>
-</div>
+	<dt>Level</dt>
+	<dd>
+		<p>Your character's level is determined by his experience (currently 0), visible on the right of the screen.  Level affects all stats, and affects what special abilities your character can perform.  While it may look very expensive to buy a level for your character, it can be useful when you're "almost there" and want the increase, as the cost decreases the closer you are to the next level.</p>
+	</dd>
+</dl>
 
 <p>So, from the "Hire" menu you may purchase whatever type(s) of men you choose.  You can edit their stats before you buy them, or, if you prefer, switch to the "Train" menu instead.  The train menu appears similar to the purchasing menu, but the NEXT and PREV buttons will take you through your already purchased men.  When you use the "LESS" and "MORE" buttons for changing their stats, notice that you do not actually pay (and thus make your changes permanent) until you click the "ACCEPT" button; this will purchase the changes, provided you have the funds, and record your character's stats.</p>
 
