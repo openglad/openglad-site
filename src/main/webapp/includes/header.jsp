@@ -29,7 +29,7 @@
 					<li><a href="/manual">Manual</a>
 					<!-- <li><a href="/campaigns">Campaigns</a> -->
 					<!-- <li><a href="/download">Download</a> -->
-					<li><a href="http://github.com/openglad/openglad">Code</a>
+					<li><a href="http://github.com/openglad">Code</a>
 					<li><a href="/about">About</a>
 				</ul>
 			</nav>

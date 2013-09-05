@@ -17,12 +17,12 @@
 	<dd><p>Just starting out? Read the <a href="manual">manual</a> to get your bearings!</p></dd>
 
 	<dt>Where do I get it?</dt>
-	<dd><p>Openglad is available for the following platforms:
+	<dd><p>We're gearing up to make a new, awesome release, so stay tuned. Openglad is/will be available for the following platforms:
 		<ul>
 			<li>Windows</li>
 			<li>Linux</li>
 			<li>MacOS</li>
-			<li><a href="https://play.google.com/store/apps/details?id=com.dinomage.openglad">Android</a></li>
+			<li><a href="https://play.google.com/store/apps/details?id=com.dinomage.openglad">Android</a> <b>available now!</b></li>
 			<li>Ouya (coming soon!)</li>
 		</ul></p>
 	</dd>
