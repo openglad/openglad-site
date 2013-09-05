@@ -16,7 +16,7 @@
 	<dt>How do I play?</dt>
 	<dd><p>Just starting out? Read the <a href="manual">manual</a> to get your bearings!</p></dd>
 
-	<dt>Where do I play?</dt>
+	<dt>Where do I get it?</dt>
 	<dd><p>Openglad is available for the following platforms:
 		<ul>
 			<li>Windows</li>

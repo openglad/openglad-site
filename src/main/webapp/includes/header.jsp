@@ -27,8 +27,8 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="/news">News</a>
 					<li><a href="/manual">Manual</a>
-					<li><a href="/campaigns">Campaigns</a>
-					<li><a href="/download">Download</a>
+					<!-- <li><a href="/campaigns">Campaigns</a> -->
+					<!-- <li><a href="/download">Download</a> -->
 					<li><a href="http://github.com/openglad/openglad">Code</a>
 					<li><a href="/about">About</a>
 				</ul>
