@@ -32,5 +32,3 @@
 </dl>
 
 <jsp:include page="/includes/footer.jsp" />
-
-</dl>
